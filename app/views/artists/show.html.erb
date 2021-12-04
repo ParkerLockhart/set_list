@@ -3,3 +3,4 @@
 <p>Number of songs: <%= @artist.songs.count %></p>
 <p>Avg song length: <%= @artist.average_song_length %></p>
 <p><%= button_to "Edit #{@artist.name}", "/artists/#{@artist.id}/edit", method: :get %></p>
+<p><%= button_to "Delete #{@artist.name}", "/artists/#{@artist.id}", method: :delete %></p>
